@@ -1,0 +1,87 @@
+:root {
+  --sidebar-width: 300px;
+    /* per usare: var(--nome-custom-prop)*/
+
+}
+
+/* RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+    height: calc(100vh - 100px);
+}
+
+.container {
+  max-width: 1170px;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  padding: -1rem;
+}
+
+.col {
+  padding: 1rem;
+}
+
+/* UTILITIES */
+
+.flex {
+  display: flex;
+}
+
+/* SECTION-1 */
+
+#bar-dx {
+  width: var(--sidebar-width);
+
+  background-color: #000000;
+  color: white;
+}
+
+/* SECTION-2 */
+
+#bar-sx {
+  width: calc(100% - var(--sidebar-width));
+  
+  background-color: #141922;
+  color: white;
+}
+
+#bar-sx .row{
+    display: flex;
+    justify-content: end;
+}
+
+#bar-sx button {
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+header {
+  height: 80px;
+  background-color: #080b12;
+  position: fixed;
+  left: var(--sidebar-width);
+  top: 0;
+  right: 0;
+}
+
+/* FOOTER */
+
+#block-2 {
+  width: 100%;
+  height: 100px;
+  background-color: #282828;
+}
