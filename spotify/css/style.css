@@ -60,6 +60,16 @@ main {
     margin-bottom: 10px;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 /* MAIN-SX*/
 
 
