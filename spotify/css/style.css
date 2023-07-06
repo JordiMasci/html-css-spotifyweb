@@ -1,8 +1,7 @@
 :root {
   --sidebar-width: 300px;
   --sidebar-widht-footer: 100px;
-    /* per usare: var(--nome-custom-prop)*/
-
+  /* per usare: var(--nome-custom-prop)*/
 }
 
 /* RESET */
@@ -13,8 +12,16 @@
   padding: 0;
 }
 
+body {
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
 main {
-    height: calc(100vh - 100px);
+  height: calc(100vh - 100px);
 }
 
 .container {
@@ -38,9 +45,20 @@ main {
   display: flex;
 }
 
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/* MAIN */
+
+
 /* SECTION-1 */
 
-#bar-dx {
+#main-sx {
   width: var(--sidebar-width);
 
   background-color: #000000;
@@ -49,25 +67,32 @@ main {
 
 /* SECTION-2 */
 
-#bar-sx {
+#main-dx {
   width: calc(100% - var(--sidebar-width));
-  
+  padding: 100px;
+
   background-color: #141922;
   color: white;
+
+  overflow-y: auto;
 }
 
-#bar-sx .row{
-    display: flex;
-    justify-content: end;
+/* HEADER */
+
+#main-dx .row {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 80px;
 }
 
-#bar-sx button {
-    padding: 0.5rem 2rem;
-    border-radius: 15px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    cursor: pointer;
-    margin-top: 20px;
+#main-dx button {
+  height: 40px;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
 }
 
 header {
@@ -77,12 +102,101 @@ header {
   left: var(--sidebar-width);
   top: 0;
   right: 0;
+  opacity: 0.8;
 }
+
+/* MAIN CONTENT */
+
+.main-header {
+    display: flex;
+    justify-content: center;
+}
+
+.main-header p {
+    margin-right: 20px;
+    cursor: pointer;
+    color: gray;
+}
+
+/* MAIN SECTION-1 */
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 
-#block-2 {
+#block {
   width: 100%;
   height: var(--sidebar-widht-footer);
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* BARRA SX */
+
+.bar-sx {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-right: 25px;
+
+}
+
+.bar-sx img {
+  height: 50px;
+}
+
+.bar-sx p {
+  margin-left: 8px;
+}
+
+#block .icon {
+  margin-left: 25px;
+}
+
+#block .fa-regular {
+  margin-left: 10px;
+}
+
+/* BARRA CENTER */
+
+.bar-c .fa-solid {
+  margin-right: 15px;
+}
+
+.bar-c {
+    text-align: center;
+}
+
+.bar-c .line {
+  border-bottom: 3px solid gray;
+  width: 500px;
+}
+
+.margin div {
+    margin: 10px;
+}
+
+
+/* BARRA DX */
+
+
+.bar-dx .fa-solid {
+  margin-left: 20px;
+}
+
+.bar-dx .line {
+    border-bottom: 3px solid gray;
+    width: 90px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
