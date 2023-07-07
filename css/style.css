@@ -93,7 +93,16 @@ main {
 
 /* MAIN-SX*/
 
+.nav-small {
+  display: none;
+}
 
+.nav-small img {
+  height: 50px;
+}
+.fa-solid {
+  margin-top: 10px;
+}
 
 /* SECTION-1 */
 
@@ -386,4 +395,11 @@ MEDIA QUERY */
     width: calc(100% - 100px);
 }
 
+.display-none {
+  display: none;
+}
+
+.nav-small {
+  display: block;
+}
 }
